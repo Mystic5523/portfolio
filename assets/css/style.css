@@ -61,10 +61,11 @@ body, html {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.ptext .border {
+.ptext .label {
     background-color: #111;
     color: gold;
     padding: 20px;
+    border-color: #111;
 }
 
 @media(max-width:568px) {
@@ -93,4 +94,26 @@ a:hover {
 /* selected link */
 a:active {
     color: blue;
+}
+
+.navcolor {
+    background-color: #111;
+    opacity: 0.70;
+}
+
+.navbar-brand {
+    color: rgb(255, 215, 0);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: gold;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 215, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.link-light {
+    color: goldenrod;
 }
