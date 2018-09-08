@@ -14,6 +14,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -23,8 +25,8 @@
     <nav class="navbar navbar-expand-lg navcolor">
         <a class="navbar-brand" href="#top">Mystic5523</a>
 
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -43,6 +45,8 @@
         </div>
     </nav>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
     <div class="pimg1">
         <div class="ptext">
             <span class="label">
@@ -57,14 +61,15 @@
         <div class="text-center">
             <img src="assets/images/NickW.jpg" class="rounded img-fluid" alt="Nick W" height="150" width="150">
         </div>
-        <p>Webdesigner with background in security. 12 years of experience in interacting with people, both in person and remotely.
-            Duties include building and using databases to track information and running the switchboard for a national mutual
-            fund company. Graduate of a full stack web development bootcamp where I developed skills in HTML, CSS, jQuery,
+        <p>Webdesigner with background in security. 12 years of experience in interacting with people, both in person
+            and remotely.
+            Duties include building and using databases to track information and running the switchboard for a national
+            mutual
+            fund company. Graduate of a full stack web development bootcamp where I developed skills in HTML, CSS,
+            jQuery,
             and AJAX amongst others.</p>
         <br>
         <br>
-
-        <a class="nav-link link-light" href="#top">Return to Top</a>
     </section>
 
     <div class="pimg2">
@@ -77,116 +82,131 @@
         </div>
     </div>
 
-    <section class="section section-dark">
-        <div class="wide portfolio">
-            <div class="container vertical-center" id="effect-5">
-                <!-- portfolio row of columns -->
-                <div class="row">
-                    <h4>
-                        <p>This is some of my work: </p>
-                    </h4>
+    <section class="section section-dark galsec">
+        <h2>Work I've done</h2>
+        <p>Work I've done both alone and in groups</p>
 
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h1>Hangman</h1>
-                        <a href="https://mystic5523.github.io/Word-Guess-Game/" target="_blank" class="expand">
-                            <img src="assets/images/hackthumb.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>A Hackers themed hangman style game using HTML, CSS, and a splash of Javascript.</p>
-                        </div>
+        <div class="gallery">
+            <figure>
+                <img src="assets/images/hackthumb.png">
+
+                <figcaption>
+                    <h3>Hangman</h3>
+                    <div class="additional">
+                        <p id="add">A Hackers themed hangman style game using HTML, CSS, and a splash of Javascript.</p>
+                        <a href="https://github.com/Mystic5523/Word-Guess-Game" target="_blank" class="expand">Github</a>
+                        <a href="https://mystic5523.github.io/Word-Guess-Game" target="_blank" class="expand">Deployed</a>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Math Crystals</h1>
-                        <a href="https://mystic5523.github.io/unit-4-game/" target="_blank" class="expand">
-                            <img src="assets/images/crystalthumb.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>Click on the crystals to add up to the random number. Built using HTML, CSS, JS, and jQuery.</p>
-                        </div>
+            <figure>
+                <img src="assets/images/crystalthumb.png">
+
+                <figcaption>
+                    <h3>Math Crystals</h3>
+                    <div class="additional">
+                        <p id="add">Click on the crystals to add up to the random number. Built using HTML, CSS, JS, and jQuery.</p>
+                        <a href="https://github.com/Mystic5523/unit-4-game" target="_blank" class="expand">Github</a>
+                        <a href="https://mystic5523.github.io/unit-4-game" target="_blank" class="expand">Deployed</a>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Movie Trivia Game</h1>
-                        <a href="https://mystic5523.github.io/TriviaGame/" target="_blank" class="expand">
-                            <img src="assets/images/triviathumb.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>A movie based trivia game built with jQuery.</p>
-                        </div>
+            <figure>
+                <img src="assets/images/triviathumb.png">
+
+                <figcaption>
+                    <h3>Movie Trivia Game</h3>
+                    <div class="additional">
+                        <p id="add">A movie based trivia game built with jQuery.</p>
+                        <a href="https://github.com/Mystic5523/TriviaGame" target="_blank" class="expand">Github</a>
+                        <a href="https://mystic5523.github.io/TriviaGame" target="_blank" class="expand">Deployed</a>
                     </div>
-                </div>
-                <div class="row">
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Giftastic!</h1>
-                        <a href="https://mystic5523.github.io/giphy/" target="_blank" class="expand">
-                            <img src="assets/images/gifthumb.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>Find movie GIFs and add more dynamically, built with jQuery and using AJAx to acces an API.</p>
-                        </div>
+            <figure>
+                <img src="assets/images/gifthumb.png">
+
+                <figcaption>
+                    <h3>Giftastic!</h3>
+                    <div class="additional">
+                        <p id="add">Find movie GIFs and add more dynamically, built with jQuery and using AJAx to acces an API.</p>
+                        <a href="https://github.com/Mystic5523/giphy" target="_blank" class="expand">Github</a>
+                        <a href="https://mystic5523.github.io/giphy" target="_blank" class="expand">Deployed</a>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Train Tracker</h1>
-                        <a href="https://mystic5523.github.io/Train-time" target="_blank" class="expand">
-                            <img src="assets/images/traintrack.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>A fictional train tracking app that you can add new trains too that are persistant. Uses Firebase.</p>
-                        </div>
+            <figure>
+                <img src="assets/images/traintrack.png">
+
+                <figcaption>
+                    <h3>Train Tracker</h3>
+                    <div class="additional">
+                        <p id="add">A fictional train tracking app that you can add new trains too that are persistant. Uses
+                            Firebase.</p>
+                        <a href="https://github.com/Mystic5523/Train-time" target="_blank" class="expand">Github</a>
+                        <a href="https://mystic5523.github.io/Train-time" target="_blank" class="expand">Deployed</a>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Recipe Finder</h1>
-                        <a href="https://github.com/Mystic5523/tom_n_jquery" target="_blank" class="expand">
-                            <img src="assets/images/recfind.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>Find recipes based on what ingredients you have.</p>
-                        </div>
+            <figure>
+                <img src="assets/images/recfind.png">
+
+                <figcaption>
+                    <h3>Recipe Finder</h3>
+                    <div class="additional">
+                        <p id="add">Find recipes based on what ingredients you have.</p>
+                        <a href="https://github.com/Mystic5523/tom_n_jquery" target="_blank" class="expand">Github</a>
+                        <a href="https://mystic5523.github.io/tom_n_jquery" target="_blank" class="expand">Deployed</a>
                     </div>
-                </div>
+                </figcaption>
+            </figure>
 
-                <div class="row">
+            <figure>
+                <img src="assets/images/liri.png">
 
-                    <div class="col-md-4">
-                        <h1>Liri Node.js</h1>
-                        <a href="https://github.com/Mystic5523/liri-node-app" target="_blank" class="expand">
-                            <img src="assets/images/liri.png" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>A Siri-like node.js command line app that searches tweets and spotify and OMDB.</p>
-                        </div>
+                <figcaption>
+                    <h3>Liri Node.js</h3>
+                    <div class="additional">
+                        <p id="add">A Siri-like node.js command line app that searches tweets and spotify and OMDB.</p>
+                        <a href="https://github.com/Mystic5523/liri-node-app" target="_blank" class="expand">Github</a>
+                        <a href="https://github.com/Mystic5523/liri-node-app" target="_blank" class="expand">Deployed</a>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Placeholder</h1>
-                        <a href="#" target="_blank" class="expand">
-                            <img src="assets/images/p3.jpg" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>Placeholder</p>
-                        </div>
+            <figure>
+                <img src="assets/images/burger.png">
+
+                <figcaption>
+                    <h3>Eat-da-Burger</h3>
+                    <div class="additional">
+                        <p id="add">A To Do list for burger you want to try using MySQL and ORM</p>
+                        <a href="https://github.com/Mystic5523/burger" target="_blank" class="expand">Github</a>
+                        <a href="https://guarded-retreat-82455.herokuapp.com" target="_blank" class="expand">Deployed</a>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="col-md-4">
-                        <h1>Placeholder</h1>
-                        <a href="#" target="_blank" class="expand">
-                            <img src="assets/images/p2.jpg" class="img-fluid">
-                        </a>
-                        <div class="overlay">
-                            <p>Placeholder</p>
-                        </div>
+            <figure>
+                <img src="assets/images/filmcritic.png">
+
+                <figcaption>
+                    <h3>Film Critic</h3>
+                    <div class="additional">
+                        <p id="add">A movie review forum that lets you log in and rate your favorite movies</p>
+                        <a href="https://github.com/Mystic5523/Film-Critic" target="_blank" class="expand">Github</a>
+                        <a href="https://criticmovies.herokuapp.com" target="_blank" class="expand">Deployed</a>
                     </div>
-                </div>
+                </figcaption>
+            </figure>
 
-                <br>
-                <br>
-                <a class="nav-link" href="#top">Return to Top</a>
+            <br>
+            <br>
 
     </section>
 
@@ -209,7 +229,6 @@
         <a href="assets/images/Nick Wesselmann Resume.pdf" download>Resume &#40;PDF File&#41;</a>
         <br>
         <br>
-        <a class="nav-link" href="#top">Return to Top</a>
     </section>
 
     <div class="pimg1">
